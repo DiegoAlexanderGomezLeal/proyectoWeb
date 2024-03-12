@@ -5,3 +5,125 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    width: 100%;
+    height: auto;
+    background-color: var(--color-body);
+}
+/* ******************************************************************* */
+/*Aca dejamos el body*/
+.container__1{
+    display: grid;
+    border: var(--color-titulos) solid 3px;
+}
+.encabezado{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.menu1{
+    display: flex;
+    padding-left:40px;
+}
+.menu1 a{
+    display: flex;
+    text-decoration: none;
+    color: var(--color-titulos);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+
+}
+.menu1 li{
+    list-style-type: none;
+}
+.menu2{
+    display: flex;
+    padding-right:40px;
+}
+.menu2 a{
+    display: flex;
+    text-decoration: none;
+    margin-right: 20px;
+    color: var(--color-font);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+.menu2 a:hover{
+    transform: scale(1.2);
+    transition: 0.3s;
+    color:var(--color-titulos);
+}
+.menu2 li{
+    list-style-type: none;
+}
+/* ****************************************************************** */
+
+/* ******************************************************************* */
+/*Aca dejamos el encabezado del container 1*/
+.contain{
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    flex-wrap: wrap;
+    /* background-color: red; */
+}
+.contenidos__1{
+    width: 100%;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+.con__1_1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+.cajahija__1{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+.titulo_1{
+    display: flex;
+    align-items: start;
+    color: var(--color-titulos);
+    font-weight: 500;
+    font-size: 5rem;
+    font-family: 'Poppins', sans-serif;
+
+}
+.parrafo_1{
+    color: var(--color-font);
+}
+.boton_1{
+    background: var(--color-titulos);
+    color: var(--color-font);
+    border: none;
+    width: 60%;
+    padding: 10px;
+}
+
+.con__1_2{
+    display: flex;
+    width: 100%;
+    height: 70VH;
+}
+.con__1_2 img{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    object-fit: contain
+}
+@media (width < 800px){
+    .contenidos__1{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
