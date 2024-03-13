@@ -13,11 +13,11 @@
             <ul class="menu">
                 <input type="checkbox" id="check">
                 <span class="menus">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Menu</a></li>
-                    <li><a href="#">Service</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Menu">Menu</a></li>
+                    <li><a href="#Service">Service</a></li>
+                    <li><a href="#Contact">Contact</a></li>
                     <label for="check" class="close-menu"><img src="storage/img/Nav_despues.png"></i></label>
                 </span>
                 <label for="check" class="open-menu"><img src="storage/img/Nav_normal.png"></label>
@@ -25,7 +25,7 @@
         </nav>
     </header>
     <main>
-        <article class="contenido">
+        <article class="contenido" id="Home">
             <div class="text">
                 <h1 class="titulo_1_1">Full Website</h1>
                 <div class="parrafo_1">
@@ -42,9 +42,9 @@
         <article class="about_us" id="About">
             <div class="img_2"><img src="storage/img/about.png" alt=""></div>
             <div class="text_2">
-                <h1 class="titulo_2">Full Website</h1>
+                <h1 class="titulo_2">About Us</h1>
                 <div class="parrafo_2">
-                    <h3 class="parrafo_2_1">We speak the good</h3>
+                    <h3 class="parrafo_2_1">We speak the good </h3>
                     <h3 class="parrafo_2_1">food language</h3>
                     <h3 class="parrafo_2_2">It is a long established fact that a 
                         be distracted by the readable content 
@@ -81,34 +81,32 @@
                 </div>
             </div>
         </article>
-        <article>
-            <div class="services" id="Services">
-                <div class="titulo_largo_2">
-                    <h3 class="titulo_3_11">Fresh taste and grat price</h3>
-                    <h3 class="titulo_3_12">Fresh taste and grat price</h3>
+        <article class="services" id="Service">
+            <div class="titulo_largo_2">
+                <h3 class="titulo_3_11">Fresh taste and grat price</h3>
+                <h3 class="titulo_3_12">Fresh taste and grat price</h3>
+            </div>
+            <div class="serviceimg">
+                <div class="service1">
+                    <img src="storage/img/s1.png" class="s1">
+                    <strong class="titulo_4_2">Order</strong>
+                    <p class="p3">It is a long established  
+                        be distracted by the readable 
+                        looking at its layout. </p>
                 </div>
-                <div class="serviceimg">
-                    <div class="service1">
-                        <img src="storage/img/s1.png" class="s1">
-                        <strong class="titulo_4_2">Order</strong>
-                        <p class="p3">It is a long established  
-                            be distracted by the readable 
-                            looking at its layout. </p>
-                    </div>
-                    <div class="service2">
-                        <img src="storage/img/s2.png" class="s2">
-                        <strong class="titulo_4_2">Shipping</strong>
-                        <p class="p3">It is a long established  
-                            be distracted by the readable 
-                            looking at its layout. </p>
-                    </div>
-                    <div class="service3">
-                        <img src="storage/img/s3.png" class="s3">
-                        <strong class="titulo_4_2">Dellvered</strong>
-                        <p class="p3">It is a long established  
-                            be distracted by the readable 
-                            looking at its layout. </p>
-                    </div>
+                <div class="service2">
+                    <img src="storage/img/s2.png" class="s2">
+                    <strong class="titulo_4_2">Shipping</strong>
+                    <p class="p3">It is a long established  
+                        be distracted by the readable 
+                        looking at its layout. </p>
+                </div>
+                <div class="service3">
+                    <img src="storage/img/s3.png" class="s3">
+                    <strong class="titulo_4_2">Dellvered</strong>
+                    <p class="p3">It is a long established  
+                        be distracted by the readable 
+                        looking at its layout. </p>
                 </div>
             </div>
         </article>
@@ -121,10 +119,48 @@
                 </button>
             </div>
         </article>
-        <article class="footer">
-            
-
-        </article>
+        <footer class="footer" id="Contact">
+            <div class="menulink">
+                <ul class="links">
+                    <strong>Menu Links</strong>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Menu">Menu</a></li>
+                    <li><a href="#Services">Service</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="our">
+                <ul class="ours">
+                    <strong>Our Servive</strong>
+                    <li><a href="#">Web Design</a></li>
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">Marketing</a></li>
+                    <li><a href="#">Product Management</a></li>
+                    <li><a href="#">Graphic Design</a></li>
+                </ul>
+            </div>
+            <div class="information">
+                <ul class="informations">
+                    <strong>Information</strong>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Delivery Information</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <ul class="contacts">
+                    <strong>Contact Us</strong>
+                    <div class="gallery">
+                        <li><a href="#"><img src="storage/img/whatsapp_109861.png" alt=""></a></li>
+                        <li><a href="#"><img src="storage/img/facebook_109862.png" alt=""></a></li>
+                        <li><a href="#"><img src="storage/img/youtube_109860.png" alt=""></a></li>
+                        <li><a href="#"><img src="storage/img/instagam_109863.png" alt=""></a></li>
+                    </div>
+                </ul>
+            </div>
+        </footer>
     </main>
 </body>
 </html>

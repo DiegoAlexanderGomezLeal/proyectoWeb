@@ -35,7 +35,7 @@ body{
     width: 100%;
     list-style: none;
     justify-content: space-around;
-    gap: 1rem;
+    gap: 15px;
 }
 .menus a{
     text-decoration: none;
@@ -68,10 +68,10 @@ body{
     flex-direction: column;
     justify-content: center;
     padding: 0 15% 0 15%;
-    gap: 1.25rem;
+    gap: 20px;
 }
 .titulo_1_1{
-    font-size: 6.25rem;
+    /* font-size: 12rem; */
     font-weight: 400;
     color: var(--color-primary);
     font-size: 5rem;
@@ -80,13 +80,13 @@ body{
     color: var(--color-secondary);
 }
 .parrafo_1 .parrafo_1_1{
-    font-size: 2rem;;
-    font-weight: 400;
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 .boton_1{
     display: flex;
-    width: 25%;
-    height: 5%;
+    width: 30%;
+    height: 7%;
     align-items: center;
     justify-content: center;
     border: none;
@@ -104,18 +104,17 @@ body{
 }
 .img_1{
     display: flex;
-    justify-content: center;
-    align-items: center;
     object-fit: contain;
-    width: 100%;
-    height: auto;
+    align-items: center;
+    justify-content: center;
 }
 .img_1 img{
-    object-fit: contain;
+    width: 80%;
+    height: 80%;
 }
 .open-menu{
-    top: 20px;
-    right: 20px;
+    top: 10px;
+    right: 10px;
     display: none;
     position: absolute;
 }
@@ -158,31 +157,37 @@ body{
 .about_us{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* border: #ff702a solid 5px; */
+    border: #ff702a solid 5px;
     width: 100%;
-    height: 100vh;
+    height: 80vh;
 }
 .text_2{
     width: 100%;
-    height: auto;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 0 15% 0 15%;
-    gap: 1.25rem;
 }
 .titulo_2{
-    font-size: 6.25rem;
-    font-weight: 400;
+    font-size: 1.2rem;
+    font-weight: 300;
     color: var(--color-primary);
-    font-size: 5rem;
+    
 }
 .parrafo_2{
+    display: flex;
     color: var(--color-secondary);
+    flex-wrap: wrap;
 }
-.parrafo_2 .parrafo_2_1{
-    font-size: 2rem;;
+.parrafo_2_1{
+    font-size: 2rem;
     font-weight: 400;
+    display: flex;
+}
+.parrafo_2_2{
+    font-size: 1rem;
+    font-weight: 100;
 }
 .boton_2{
     display: flex;
@@ -207,21 +212,59 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    object-fit: contain;
-    width: 100%;
-    height: auto;
+    
 }
 .img_2 img{
     object-fit: contain;
+    width: 80%;
+    height: 80%;
 }
+.footer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    border: #ff702a solid 5px;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    color: var(--color-secondary);
+}
+.footer strong{
+    text-decoration: underline var(--color-primary);
+}
+.gallery{
+    display: flex;
+    flex-direction: row;
+}
+.footer .gallery li a img {
+    width: 30px;
+    height: 30px;
+}
+
+.footer ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.footer ul li a {
+    color: var(--color-secondary);
+    text-decoration: none;
+}
+
+
 /* *************************** */
 /* terminamos el segundo parte */
 .Food_menu{
-    /* border: #ff702a solid 5px; */
+    border: #ff702a solid 5px;
     display: grid;
     grid-template-rows: 5px 1fr;
     width: 100%;
-    height: 100vh;
+    height: 80vh;
 }
 .titulo_largo{
     display: flex;
@@ -240,20 +283,34 @@ body{
     color: var(--color-secondary);
 }
 .imagenes_menu{
+    /* margin-top: 8rem; */
     width: 100%;
+    height: 100vh;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     align-items: center;
+
 }
 .plato_1, .plato_2, .plato_3{
     display: flex;
-    width: 25px;
-    height: 25px;
+    width: 80%;
+    height: 40%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: var(--color-alternative);
+    background: var(--color-secondary);
+    justify-content: space-around;
+
+}
+.imagen_3_1, .imagen_3_2, .imagen_3_3{
+    display: flex;
+    object-fit: contain;
+    height: auto;
+}
+.imagen_3_1, .imagen_3_2, .imagen_3_3, img{
+    width: 70%;
+    height: 70%;
 }
 .titulo_4{
     color: var(--color-terceary);
@@ -264,11 +321,11 @@ body{
 /* *****************************+** */
 /* parte 4 */
 .services{
-    /* border: #ff702a solid 5px; */
+    border: #ff702a solid 5px;
     display: grid;
     grid-template-rows: 5px 1fr;
     width: 100%;
-    height: 100vh;
+    height: 120vh;
 }
 .titulo_largo_2{
     display: flex;
@@ -287,8 +344,9 @@ body{
     color: var(--color-secondary);
 }
 .serviceimg{
+    margin-top: 8rem;
     width: 100%;
-    height: auto;
+    height: 100vh;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
@@ -297,15 +355,15 @@ body{
 }
 .service1, .service2, .service3{
     display: flex;
-    width: 300px;
-    height:300px;
+    width: 18.75rem;
+    height:18.75rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .s1, .s2, .s3{
-    width: 100%;
-    height: auto;
+    width: 80%;
+    height: 80%;
     display: flex;
 }
 .p3{
@@ -328,8 +386,8 @@ body{
     justify-content: center;
 }
 .conteniddo_b{
-    width: 1000px;
-    height: 300px;
+    width: 100rem;
+    height: 30rem;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -364,43 +422,88 @@ body{
 /* responsive */
 @media (max-width: 768px) {
     /* Aquí van los estilos para pantallas menores a 768px */
+    *{
+        text-align: center;
+        
+    }
     .encabezado_1{
         grid-template-columns: 1fr;
         padding: 1% 1% 0 2%;
         font-size: 1rem;
     }
     .titulo_1{
-        font-size: 1.5rem;
+        display: flex;
+        font-size: 1.4rem;
     }
     .contenido{
         grid-template-columns: 1fr;
     }
     .text{
-        padding: 0 10% 0 10%;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+        justify-content: center;
     }
-    .titulo_1_1, .titulo_2{
-        font-size: 3rem;
+    .text_2{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
     }
-    .parrafo_1 .parrafo_1_1, .parrafo_2 .parrafo_2_1{
+    .titulo_1_1{
+        font-size: 2.5rem;
+    }
+    .titulo_2{
+        font-size: 1rem;
+    }
+    .parrafo_1 .parrafo_1_1, .parrafo_2, .parrafo_2_1{
         font-size: 1.5rem;
     }
     .boton_1, .boton_2{
         width: 50%;
-        height: 10%;
+        height: auto;
+        padding: 0.3rem;
     }
     .boton_1 h3, .boton_2 h3{
         font-size: 1rem;
     }
-    .about_us, .Food_menu, .services{
+    .about_us{
         grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .Food_menu{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        height: 115vh;
+    }
+    .services{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .plato_1, .plato_2, .plato_3{
+        display: flex;
+        width: 10rem;
+        height: 10rem;
+        box-shadow: #ff702a;
     }
     .imagenes_menu, .serviceimg{
         grid-template-columns: 1fr;
     }
-    .plato_1, .plato_2, .plato_3, .service1, .service2, .service3{
-        width: 200px;
-        height: 200px;
+    .about_us {
+        display: flex;
+        flex-direction: column-reverse;
+        
     }
+    .plato_1, .plato_2, .plato_3{
+        width: 16.5rem;
+        height: 16.5rem;
+    }
+    .service1, .service2, .service3{
+        width: 12.5rem;
+        height: 12.5rem;
+    }
+    
     .titulo_largo, .titulo_largo_2{
         height: 15vh;
     }
@@ -410,9 +513,19 @@ body{
     .titulo_3_2, .titulo_3_12{
         font-size: 2rem;
     }
+    .blanco{
+        width: 20rem;
+        height: 30rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        background: var(--color-secondary);
+    }
     .conteniddo_b{
-        width: 90%;
-        height: 300px;
+        display: flex;
+        width: 80%;
+        height: 12rem;
     }
     .boton_5{
         width: 50%;
@@ -420,5 +533,22 @@ body{
     }
     .boton_5 h3{
         font-size: 1rem;
+    }
+    /* ************************************** */
+    .footer{
+        grid-template-columns: 1fr;
+    }
+
+    .footer .gallery li a img {
+        width: 15px;
+        height: 15px;
+        justify-content: center;
+    }
+    .footer strong{
+        text-align: start;
+    }
+    .footer ul li {
+        margin-bottom: 3px;
+        text-align: start;
     }
 }
