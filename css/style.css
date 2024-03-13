@@ -243,13 +243,15 @@ body{
     justify-items: center;
     align-items: center;
 }
-.food1, .food2, .food3{
+.plato_1, .plato_2, .plato_3{
     display: flex;
     width: 400px;
-    height: 4
-    00px;
+    height: 400px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: var(--color-alternative);
+}
+.titulo_4{
+    color: var(--color-terceary);
 }
