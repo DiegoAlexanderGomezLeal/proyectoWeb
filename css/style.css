@@ -462,7 +462,7 @@ body{
         font-size: 1rem;
     }
     .parrafo_1 .parrafo_1_1, .parrafo_2, .parrafo_2_1{
-        font-size: 1.5rem;
+        font-size: 1.7rem;
     }
     .boton_1, .boton_2{
         width: 50%;
@@ -474,6 +474,7 @@ body{
     }
     .about_us{
         grid-template-columns: 1fr;
+        text-align: center;
         grid-template-rows: 1fr 1fr;
     }
     .Food_menu{
