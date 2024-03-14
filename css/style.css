@@ -4,18 +4,21 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
 }
 body{
     width: 100%;
     height: 100vh;
     background:var(--color-primary) ;
 }
+/* *********************contenedor padre********************** */
 .container{
     display: grid;
-    grid-template-columns: 20% 1fr;
+    grid-template-columns: 25% 1fr;
     justify-content: center;
     align-items: center;
 }
+/* *******************menu******************* */
 .menu{
     width: 100%;
     height: 100vh;
@@ -25,6 +28,7 @@ body{
     align-items: center;
     background-color: red;
 }
+/* *****************contenido de la derecha************************* */
 .Todos{
     width: 100%;
     height: 100vh;
@@ -35,22 +39,150 @@ body{
 }
 .todos_1{
     padding: 1rem;
-    width: 100%; 
-    height: 60vh;
+    width: 100%;
+    height: 90vh;
     background-color: white;
     display: grid;
     grid-template-rows: 10% 1fr;
+    border: black solid 1px;
+    border-radius: 3rem;
 }
 .contenidos{
     padding: 10px;
-    width: 100%; 
+    width: 100%;
     height: auto;
     display: grid;
     gap: 1rem;
-    grid-auto-rows: 10rem;
-    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    grid-auto-rows: 20rem;
+    grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
     overflow-y: auto;
 }
-.coats, {
-    background-color: whi;
+.coats, .shirt, .pants{
+    display: grid;
+    grid-template-rows: 4fr 1fr;
+    border: black solid 1px;
+    border-radius: 2rem;
 }
+.text{
+    display: grid;
+    background-color: green;
+    border-radius: 3rem;
+    padding: 1rem;
+    grid-template-columns: 1fr 1fr;
+}
+.texto_si{
+    display: flex;
+    flex-direction: column;
+}
+/* ************************************************************** */
+.coats_1{
+    background-image: url(../storage/img/abrigos/APRILIA.webp);
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 5rem;
+}
+.coats_2{
+    background-image: url(../storage/img/abrigos/DUCATI.webp);
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 5rem;
+
+}
+.coats_3{
+    background-image: url(../storage/img/abrigos/KTM.jpg);
+    object-fit: contain;
+    background-repeat: no-repeat;
+    border-radius: 5rem;
+
+    background-size: contain;
+}
+.coats_4{
+    background-image: url(../storage/img/abrigos/GASGAS.jpg);
+    object-fit: contain;
+    background-repeat: no-repeat;
+
+    border-radius: 5rem;
+    background-size: contain;
+}
+.coats_5{
+    background-image: url(../storage/img/abrigos/HONDA.jpg);
+    border-radius: 5rem;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/* *******************************************************+ */
+.shirt_1{
+    background-image: url(../storage/img/camisetas/APRILIA.webp);
+    object-fit: contain;
+    background-repeat: no-repeat;
+    border-radius: 5rem;
+    background-size: contain;
+}
+.shirt_2{
+    background-image: url(../storage/img/camisetas/DUCATI.webp);
+    object-fit: contain;
+    background-repeat: no-repeat;
+    border-radius: 5rem;
+    background-size: contain;
+}
+.shirt_3{
+    background-image: url(../storage/img/camisetas/HONDA.webp);
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 5rem;
+}
+.shirt_4{
+    background-image: url(../storage/img/camisetas/KTM.webp);
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 5rem;
+}
+.shirt_5{
+    background-image: url(../storage/img/camisetas/YAMAHA.webp);
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 5rem;
+}
+/* ******************************************************* */
+.pants_1{
+    background-image: url(../storage/img/pantalones/FOX_A.webp);
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 5rem;
+}
+.pants_2{
+    background-image: url(../storage/img/pantalones/FOX_G.webp);
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 5rem;
+}
+.pants_3{
+    background-image: url(../storage/img/pantalones/FOX_M.webp);
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 5rem;
+}
+.pants_4{
+    background-image: url(../storage/img/pantalones/FOX_N.webp);
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 5rem;
+}
+.pants_5{
+    background-image: url(../storage/img/pantalones/FOX_R.webp);
+    
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 5rem;
+}
+/* *********************************************************** */
