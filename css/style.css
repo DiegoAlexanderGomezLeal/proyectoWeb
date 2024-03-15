@@ -4,7 +4,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
+    font-family: 'Poppins', sans-serif; 
 }
 body{
     width: 100%;
@@ -21,14 +21,7 @@ body{
 
 }
 /* *******************menu******************* */
-.menu1{
-    display: grid;
-    grid-template-rows: repeat(4, 1fr);
-    text-decoration: none;
-    justify-content: space-around;
-    padding: 1rem;
-    gap: 1.2rem;
-}
+
 .menu{
     width: 100%;
     height: 100vh;
@@ -38,6 +31,13 @@ body{
     align-items: center;
     background-color: rgba(0, 0, 0, 0.115);
 }
+.menu1{
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    justify-content: space-around;
+    padding: 1rem;
+    gap: 1.2rem;
+}
 .menu1 li{
     list-style: none;
     padding: 1rem;
@@ -45,10 +45,42 @@ body{
     border-radius: 1rem;
 }
 .menu1 li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
     color: black;
 }
+.menu1 li a img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+}
+.carrito{
+    display: grid;
+    justify-content: space-around;
+    padding: 1rem;
+    gap: 1.2rem;
+}
+.carrito li{
+    list-style: none;
+    padding: 1rem;
+    background-color: gray;
+    border-radius: 1rem;
+}
 .carrito li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+}
+.carrito li a img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
     color: black;
 }
@@ -64,13 +96,12 @@ body{
 .todos_1{
     padding: 1rem;
     width: 100%;
-    height: 90vh;
+    height: 85vh;
     background-color: white;
     display: grid;
-    grid-template-rows: 10% 1fr;
+    grid-template-rows: 10% 1fr ;
     border: rgba(0, 0, 0, 0.11) solid 1px;
-    border-radius: 3rem
-    ;
+    border-radius: 3rem;
 }
 .contenidos{
     padding: 10px;
@@ -81,6 +112,78 @@ body{
     grid-auto-rows: 20rem;
     grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
     overflow-y: auto;
+}
+.contenidos_1{
+    background-color: white;
+    padding: 10px;
+    width: 100%;
+    height: 68vh;
+    display: grid;
+    gap: 1rem;
+    grid-auto-rows: minmax(12rem, 6fr);
+    /* grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr)); */
+    overflow-y: auto;
+}
+.coatsmenu{
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 1fr 1fr 1fr;
+    border: rgba(0, 0, 0, 0.187) solid 1px;
+    border-radius: 2rem;
+    max-height: 60vh;
+    overflow: auto; /* Esto habilita el scroll si el contenido excede el alto máximo */
+}
+.coatsmenu_footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: rgba(0, 0, 0, 0.187) solid 1px;
+    border-radius: 1rem;
+    max-height: 10vh;
+}
+.derecha{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.derecha li{
+    list-style: none;
+}
+.derecha li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+}
+.derecha li a img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+}
+.izquierda{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    background-color: rgba(255, 0, 0, 0);
+}
+.izquierda li{
+    list-style: none;
+}
+.izquierda li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+}
+.izquierda li a img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
 }
 .coats, .shirt, .pants{
     display: grid;
@@ -94,6 +197,14 @@ body{
     border-radius: 1rem;
     padding: 1rem;
     grid-template-columns: 1fr 1fr;
+}
+.textmenu, .cantidad, .precio, .subtotal, .carritoimg, .total{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem; 
+    justify-content: center;
+   
 }
 .texto_si{
     display: flex;
