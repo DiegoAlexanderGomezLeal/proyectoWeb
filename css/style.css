@@ -38,10 +38,16 @@ body{
     padding: 1rem;
     gap: 1.2rem;
 }
+.caja li a{
+    list-style: none;
+    padding: 0rem;
+    background-color: rgba(0, 0, 0, 0.262);
+    border-radius: 1rem;
+}
 .menu1 li{
     list-style: none;
     padding: 1rem;
-    background-color: gray;
+    background-color: rgb(255, 255, 255);
     border-radius: 1rem;
 }
 .menu1 li a{
@@ -67,7 +73,7 @@ body{
 .carrito li{
     list-style: none;
     padding: 1rem;
-    background-color: gray;
+    background-color: rgb(255, 255, 255);
     border-radius: 1rem;
 }
 .carrito li a{
@@ -97,7 +103,7 @@ body{
     padding: 1rem;
     width: 100%;
     height: 85vh;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     display: grid;
     grid-template-rows: 10% 1fr ;
     border: rgba(0, 0, 0, 0.11) solid 1px;
@@ -120,7 +126,7 @@ body{
     height: 68vh;
     display: grid;
     gap: 1rem;
-    grid-auto-rows: minmax(12rem, 6fr);
+    grid-template-rows: 12rem 12rem 12rem 12rem 6rem;
     /* grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr)); */
     overflow-y: auto;
 }
@@ -331,28 +337,36 @@ body{
 }
 /* *********************************************************** */
 @media (max-width: 480px) {
-    .container{
+    .container {
+        background-color: rgba(0, 0, 0, 0.089);
         grid-template-columns: 1fr;
     }
-    .menu{
+    .menu {
+        background-color: rgba(0, 0, 0, 0.089);
         grid-template-rows: auto;
     }
-    .Todos{
+    .Todos {
+        background-color: rgba(0, 0, 0, 0.089);
         padding: 1rem;
+        overflow: auto; /* Agrega esta línea */
     }
-    .todos_1{
+    .todos_1 {
         height: auto;
+        grid-template-rows: 1% 1fr;
     }
-    .contenidos{
-        grid-auto-rows: 10rem;
+    .contenidos {
+        grid-auto-rows: 27rem;
     }
-    .contenidos_1{
-        height: auto;
+    .contenidos_1 {
+        grid-auto-rows: 27rem;
     }
-    .coatsmenu{
+    .coatsmenu {
+        background-color: rgba(0, 0, 0, 0.089);
+        padding: 1rem;
+        overflow: auto; /* Agrega esta línea */
+    }
+    .coatsmenu_footer {
         grid-template-columns: 1fr;
     }
-    .coatsmenu_footer{
-        grid-template-columns: 1fr;
-    }
+    /* Aquí puedes agregar más ajustes específicos para pantallas pequeñas si es necesario */
 }
