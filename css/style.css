@@ -330,3 +330,29 @@ body{
     border-radius: 5rem;
 }
 /* *********************************************************** */
+@media (max-width: 480px) {
+    .container{
+        grid-template-columns: 1fr;
+    }
+    .menu{
+        grid-template-rows: auto;
+    }
+    .Todos{
+        padding: 1rem;
+    }
+    .todos_1{
+        height: auto;
+    }
+    .contenidos{
+        grid-auto-rows: 10rem;
+    }
+    .contenidos_1{
+        height: auto;
+    }
+    .coatsmenu{
+        grid-template-columns: 1fr;
+    }
+    .coatsmenu_footer{
+        grid-template-columns: 1fr;
+    }
+}
