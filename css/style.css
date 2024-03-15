@@ -21,7 +21,7 @@ body{
 
 }
 /* *******************menu******************* */
-.menu1 li a{
+.menu1{
     display: grid;
     grid-template-rows: repeat(4, 1fr);
     text-decoration: none;
